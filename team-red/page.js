@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define */
 /* globals document */
 const $app = document.getElementById('app');
 
@@ -49,7 +48,7 @@ function renderOption(variant) {
 function renderPage() {
   const variant = product.variants.find(v => state.variant === v.sku);
   $app.innerHTML = `
-    <h1 id="store">The Model Store</h1>
+    <h1 id="store">Application</h1>
     <blue-basket id="basket"></blue-basket>
     <div id="image"><div><img src="${variant.image}" alt="${variant.name}" /></div></div>
     <h2 id="name">${product.name} <small>${variant.name}</small></h2>
