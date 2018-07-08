@@ -4,6 +4,7 @@
 }
 
 #app {
+  position: relative;
   padding: 15px;
   margin: 40px auto;
   min-width: 500px;
@@ -12,23 +13,55 @@
   outline: 3px dashed orangered;
 }
 
-#app div {
+#navigation {
+  width: 45%;
+  position: absolute;
+  left: 0;
+  outline: 3px dashed orangered;
   margin: 20px;
   padding: 15px;
 }
 
-#navigation {
-  outline: 3px dashed blue;
+#navigation .red-cat-item {
+  font-size: 13px;
+  padding: 8px 9px;
+  border: 1px solid lightgray;
+  margin-right: 5px;
 }
 
-#shopping-cart {
-  outline: 3px dashed darkgreen;
+#navigation .red-cat-item:hover,
+#navigation .red-cat-item.active {
+  cursor: pointer;
+  background-color: #eee;
 }
 
 #search {
-  outline: 3px dashed cadetblue;
+  width: 45%;
+  position: absolute;
+  right: 0;
+  outline: 3px dashed blue;
+  margin: 20px;
+  padding: 15px;
 }
 
-#products {
+#details {
+  height: 400px;
+  width: 70%;
+  position: absolute;
+  left: 0;
+  top: 100px;
   outline: 3px dashed darkmagenta;
+  margin: 20px;
+  padding: 15px;
+}
+
+#shopping-cart {
+  height: 400px;
+  width: 20%;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  outline: 3px dashed darkgreen;
+  margin: 20px;
+  padding: 15px;
 }
