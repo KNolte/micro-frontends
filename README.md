@@ -1,4 +1,4 @@
-# micro-frontends
+# Micro Frontends
 
 ## What are Micro Frontends?
 
