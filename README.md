@@ -1,27 +1,27 @@
 # Micro Frontends
 
-## What are Micro Frontends?
+## Was sind Micro Frontends?
 
-## Core Ideas behind Micro Frontends
+## Die grundsätzliche Idee bei Micro Frontends
 
-## The DOM is the API
+## Das DOM ist die Schnittstelle
 
-## Page Composition
+## Seiten Komposition
 
-## The Base Prototype
+## Der Prototyp
 
-## How to Create a Custom Element?
+## Web Components / Browser Support
 
-## Child-Parent or Siblings Communication / DOM Events
+## Vater-Kind und Geschwister Kommunikation / DOM Events
 
-## Navigating between pages
+## Navigation zwischen Seiten
 
-## soft vs. hard navigation
+## Soft vs. Hard Navigation
 
-## universal router
+## Universal Router
 
 ## Side Topics
 
-### Isolated CSS
-### Coherent User Interfacs
-### Style Guides & Pattern Libraries
+* Isolated CSS
+* Coherent User Interfacs
+* Style Guides & Pattern Libraries
