@@ -22,8 +22,7 @@ Wenn man auf unabhängige Web Components setzt, muss man aktuell noch sehr viel 
 In den letzten Monaten kann man eine kleine Renaissance der Web Components sehen. Unternehmen wie Google (Angular Elements und Polymer 2) und Ionic Framework (Stencil) bauen Tools auf, die Web Components zugänglicher und performanter machen. Es gibt auch neue Gemeinschaftsunternehmen wie SkateJS und SlimJS, die die Entwicklung von Web-Komponenten erleichtern. Alle neuen Tools enthalten Framework-Goodies wie Datenbindung und mehr, die die Lücke der Nutzung von Webkomponenten schließen. Darüber hinaus verwendet die Community diese Tools, um wiederverwendbare Webkomponenten zu erstellen, die in jedem Framework verwendet werden können.
 
 ## Das DOM ist die Schnittstelle
-
-TODO
+Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über einheitliche Events (Shared Event Bus). Dabei ist jedes Event mit einem speziellen Prefix für das jeweilige Team versehen. Die Initialisierung jeder einzelnen Komponente erfolgt ausschließlich über das setzen von HTML Attributen.
 
 ## Seiten Komposition
 
