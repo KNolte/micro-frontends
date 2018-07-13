@@ -6,7 +6,13 @@ Micro Frontends ist ein Ansatz die Idee der Micro Service Architektur als dem Ba
 
 ## Die grundsätzliche Idee bei Micro Frontends
 
-TODO
+* Weg von einem großen Frontend Monolithen
+* Frontend skalierbar machen
+* Technologisch unabhängig bleiben
+* Kollisionen beim Buildprozess vermeiden
+* Code von den unterschiedlichen Teams isolieren
+* Team Prefixes nutzen
+* Native Browser Funktionen gegenüber Custom APIs bevorzugen
 
 ## Die Problematik die aktuell (noch) existiert
 
