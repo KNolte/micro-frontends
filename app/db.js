@@ -7,23 +7,10 @@ Storage.prototype.getObject = function (key) {
     return value && JSON.parse(value);
 };
 
-localStorage.setObject('db', [
-    {
-        title: 'books',
-        items: [
-            {price: '13 €', title: 'Das Paket', id: 'b1'},
-            {price: '15€', title: 'Die Chemie des Todes', id: 'b2'}
-        ]
-    },
-    {
-        title: 'films',
-        items: [
-            {price: '19€', title: 'Fifty Shades of Grey', id: 'f1'}
-        ]
-    },
-        {title: 'music',
-        items: [
-            {price: '21€', title: 'Vergiss mein nicht', id: 'm1'}
-        ]
-    }
+localStorage.setObject('categories', ['books', 'films', 'music']);
+localStorage.setObject('items', [
+    {id: 'b1', price: '13 €', title: 'Das Paket', category: 'books'},
+    {id: 'b2', price: '15€', title: 'Die Chemie des Todes', category: 'books'},
+    {id: 'f1', price: '19€', title: 'Fifty Shades of Grey', category: 'films'},
+    {id: 'm1', price: '21€', title: 'Vergiss mein nicht', category: 'music'}
 ]);

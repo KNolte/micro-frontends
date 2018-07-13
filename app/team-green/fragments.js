@@ -17,9 +17,7 @@
         }
 
         render() {
-            let items = localStorage.getObject('db')
-                .map((cat) => cat.items);
-            items = [].concat.apply([], items).filter((item) => state.items.indexOf(item.id) !== -1)
+            let items = localStorage.getObject('items').filter((item) => state.items.indexOf(item.id) !== -1)
 
             this.innerHTML = '<h3>ShoppingCart</h3>';
             for (let item of items) {
@@ -55,11 +53,9 @@
 
         render() {
             const itemId = this.getAttribute('item-id');
-            let items = localStorage.getObject('db')
-                .map((cat) => cat.items);
-            let price = [].concat.apply([], items).filter((item) => item.id === itemId)[0].price
+            let item = localStorage.getObject('items').filter((item) => item.id === itemId)[0]
 
-            this.innerHTML = `<button type="button">buy for ${price}</button>`;
+            this.innerHTML = `<button type="button">buy for ${item.price}</button>`;
         }
 
         attributeChangedCallback(attr, oldValue, newValue) {
