@@ -2,23 +2,23 @@
 const $app = document.getElementById('app');
 
 // data
-const categories = ['books', 'films', 'music'];
+const db = localStorage.getObject('db');
 
 const state = {
     category: 'books',
 };
 
 function renderCategoryItem(category) {
-    const active = state.category === category ? 'active ' : '';
-    return `<span class="${active}red-cat-item ${category}" data-category="${category}">${category}</span>`;
+    const active = state.category.title === category ? 'active ' : '';
+    return `<span class="${active}red-cat-item ${category.title}" data-category="${category.title}">${category.title}</span>`;
 }
 
 function renderPage() {
-  const category = categories.find(cat => state.category === cat);
+  const category = db.find(cat => state.category === cat.title);
   $app.innerHTML = `
-    <div id="navigation">${categories.map(renderCategoryItem).join('')}</div>
+    <div id="navigation">${db.map(renderCategoryItem).join('')}</div>
     <blue-search id="search">Search</blue-search>
-    <violet-details id="details" category="${category}">Details</violet-details>
+    <violet-details id="details" category="${category.title}">Details</violet-details>
     <green-shopping-cart id="shopping-cart">Shopping Cart</green-shopping-cart>
   `;
 }
