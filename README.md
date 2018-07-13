@@ -56,7 +56,7 @@ TODO
 
 TODO
 
-## Kohärentes User Interfacs
+## Kohärentes User Interface
 
 TODO
 
