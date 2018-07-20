@@ -19,8 +19,13 @@
             const items = localStorage.getObject('items').filter((item) => item.category === categoryTitle) || [];
             this.innerHTML = `
                 <h3>${categoryTitle}</h3>
-                <div>
-                ${items.map(item => `<div>${item.title} <green-buy item-id="${item.id}"></green-buy></div>`).join('')}
+                <div class="items">
+                    ${items.map(item => `
+                        <div class="item">
+                            <h4>${item.title}</h4>
+                            <img src="${item.thumb_url}"/>
+                            <green-buy item-id="${item.id}"></green-buy>
+                        </div>`).join('')}
                 </div>
             `;
         }

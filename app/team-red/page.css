@@ -1,0 +1,156 @@
+/* css red team */
+
+body {
+    background-image: url("../assets/bg.jpg");
+    background-size: 100% auto;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#red-app {
+    position: relative;
+    padding: 15px;
+    margin: 40px auto;
+    min-width: 500px;
+    max-width: 1024px;
+    height: 570px;
+    outline: 1px dashed orangered;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#red-navigation {
+    width: 45%;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+#red-navigation .red-cat-item {
+    font-size: 13px;
+    margin-right: 5px;
+    padding: 15px 25px;
+    background-color: white;
+}
+
+#red-navigation .red-cat-item:hover,
+#red-navigation .red-cat-item.active {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+/* css blue team */
+
+#blue-search {
+    width: 45%;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    outline: 1px dashed blue;
+    background-color: white;
+    z-index: 1;
+}
+
+#blue-search #blue-search-input {
+    height: 45px;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 8px;
+}
+
+#blue-search #blue-dropdown {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+#blue-search .blue-dropdown .blue-item {
+    display: block;
+    padding: 5px 8px;
+}
+
+#blue-search .blue-dropdown .blue-item:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+/* css violet team */
+
+#violet-details {
+    height: 400px;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    outline: 1px dashed darkmagenta;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+}
+
+#violet-details h3 {
+    border-bottom: 1px solid cornflowerblue;
+    padding: 0 5px 5px 5px;
+    margin: 0 0 20px 0;
+}
+
+#violet-details .items {
+    margin: 10px;
+}
+
+#violet-details .item {
+    float: left;
+    margin-right: 40px;
+}
+
+#violet-details .item img {
+    margin-bottom: 15px;
+}
+
+/* css green team */
+
+#green-shopping-cart {
+    height: 400px;
+    width: 22%;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    outline: 1px dashed darkgreen;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+}
+
+#green-shopping-cart h3 {
+    border-bottom: 1px solid cornflowerblue;
+    padding: 0 5px 5px 5px;
+    margin: 0 0 20px 0;
+}
+
+#green-shopping-cart .item {
+    font-size: 14px;
+}
+
+#green-shopping-cart .sum {
+    border-top: 1px solid cornflowerblue;
+    border-bottom: none;
+    bottom: 30px;
+    padding: 5px 5px 0 5px;
+    margin: 20px 0 0 0;
+    text-align: right;
+}
+
+.green-buy {
+    display: block;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    background: white;
+    padding: 6px 9px;
+    cursor: pointer;
+}
+
+.green-buy:hover {
+    background-color: lightblue;
+}

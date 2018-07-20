@@ -5,33 +5,6 @@
         items: []
     };
 
-    class GreenShoppingCart extends HTMLElement {
-        connectedCallback() {
-            this.refresh = this.refresh.bind(this);
-            this.render();
-            window.addEventListener('green:cart:changed', this.refresh);
-        }
-
-        refresh() {
-            this.render();
-        }
-
-        render() {
-            let items = localStorage.getObject('items').filter((item) => state.items.indexOf(item.id) !== -1)
-
-            this.innerHTML = '<h3>ShoppingCart</h3>';
-            for (let item of items) {
-                this.innerHTML += `${item.title} ${item.price}</br>`;
-            }
-        }
-
-        disconnectedCallback() {
-            window.removeEventListener('green:cart:changed', this.refresh);
-        }
-    }
-
-    window.customElements.define('green-shopping-cart', GreenShoppingCart);
-
 
     class GreenBuy extends HTMLElement {
         static get observedAttributes() {
@@ -45,7 +18,8 @@
         }
 
         addToCart() {
-            state.items.push(this.getAttribute('item-id'));
+            let item = localStorage.getObject('items').find((item) => item.id === this.getAttribute('item-id'))
+            state.items.push(item);
             this.dispatchEvent(new CustomEvent('green:cart:changed', {
                 bubbles: true,
             }));
@@ -53,9 +27,9 @@
 
         render() {
             const itemId = this.getAttribute('item-id');
-            let item = localStorage.getObject('items').filter((item) => item.id === itemId)[0]
+            let item = localStorage.getObject('items').find((item) => item.id === itemId)
 
-            this.innerHTML = `<button type="button">buy for ${item.price}</button>`;
+            this.innerHTML = `<button class="green-buy" type="button">buy for ${item.price}</button>`;
         }
 
         attributeChangedCallback(attr, oldValue, newValue) {
@@ -68,4 +42,37 @@
     }
 
     window.customElements.define('green-buy', GreenBuy);
+
+    class GreenShoppingCart extends HTMLElement {
+        connectedCallback() {
+            this.refresh = this.refresh.bind(this);
+            this.render();
+            window.addEventListener('green:cart:changed', this.refresh);
+        }
+
+        refresh() {
+            this.render();
+        }
+
+        render() {
+            this.innerHTML = '<h3>shoppingCart</h3>';
+
+            for (let item of state.items) {
+                this.innerHTML += `<span class="item">${item.title} ${item.price} €</span></br>`;
+            }
+
+            if (state.items.length) {
+                console.log(JSON.stringify(state.items.reduce((previous, current) => previous + parseInt(current.price), 0)));
+                this.innerHTML += `
+                    <h3 class="sum">Total: ${state.items.reduce((previous, current) => previous + parseInt(current.price), 0)} €</h3>
+                `;
+            }
+        }
+
+        disconnectedCallback() {
+            window.removeEventListener('green:cart:changed', this.refresh);
+        }
+    }
+
+    window.customElements.define('green-shopping-cart', GreenShoppingCart);
 }());
