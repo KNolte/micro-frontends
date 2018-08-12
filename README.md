@@ -26,6 +26,9 @@ In den letzten Monaten kann man eine kleine Renaissance der Web Components sehen
 ## Das DOM ist die Schnittstelle
 Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über einheitliche Events (Shared Event Bus). Dabei ist jedes Event mit einem speziellen Prefix für das jeweilige Team versehen. Die Initialisierung jeder einzelnen Komponente erfolgt ausschließlich über das setzen von HTML Attributen.
 
+## Angular Elements als Ansatz
+https://itnext.io/building-micro-frontend-applications-with-angular-elements-34483da08bcb
+
 ## Der Prototyp
 
 TODO
