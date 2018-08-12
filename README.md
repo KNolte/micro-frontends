@@ -28,17 +28,6 @@ Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über ei
 
 ## Unterschiedliche Ansätze
 
-### Angular Elements als Ansatz
-![alt text](https://cdn-images-1.medium.com/max/2000/1*x-BikaKLnRBWop9T-6gJmA.png)
-https://itnext.io/building-micro-frontend-applications-with-angular-elements-34483da08bcb
-
-#### Vorteile
-* Mächtigkeit von Angular kann genutzt werden
-
-#### Nachteile
-* Angular Kontext ist erforderlich
-* mehrere Frameworks laden, ist keine Option
-
 ### Plain Web Components Ansatz
 https://github.com/KNolte/micro-frontends/blob/master/index.html
 
@@ -47,6 +36,19 @@ https://github.com/KNolte/micro-frontends/blob/master/index.html
 
 #### Nachteile
 * Sämtliche Funktionalität muss selbst geschrieben werden
+
+### Angular Elements als Ansatz
+![alt text](https://cdn-images-1.medium.com/max/2000/1*x-BikaKLnRBWop9T-6gJmA.png)
+https://itnext.io/building-micro-frontend-applications-with-angular-elements-34483da08bcb
+
+Ähnliche Ansätze gibt es auch mit React & Vue.js, allerdings muss auch immer das jeweilige Framework mitgeladen werden.
+
+#### Vorteile
+* Mächtigkeit von Angular kann genutzt werden
+
+#### Nachteile
+* Angular Kontext ist erforderlich
+* mehrere Frameworks laden, ist keine Option
 
 ## Herausforderungen im Kontext von Micro Frontends
 
