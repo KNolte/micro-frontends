@@ -29,13 +29,8 @@ Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über ei
 ## Angular Elements als Ansatz
 https://itnext.io/building-micro-frontend-applications-with-angular-elements-34483da08bcb
 
-## Der Prototyp
-
-TODO
-
-## Web Components / Browser Support
-
-TODO
+## Plain Web Components
+https://github.com/KNolte/micro-frontends/blob/master/index.html
 
 ## Vater-Kind und Geschwister Kommunikation / DOM Events
 
