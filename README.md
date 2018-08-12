@@ -37,6 +37,9 @@ https://github.com/KNolte/micro-frontends/blob/master/index.html
 #### Nachteile
 * Sämtliche Funktionalität muss selbst geschrieben werden
 
+### Multiple single-page apps that live at different URLs
+The apps use NPM/Bower components for shared functionality
+
 ### Angular Elements als Ansatz
 ![alt text](https://cdn-images-1.medium.com/max/2000/1*x-BikaKLnRBWop9T-6gJmA.png)
 https://itnext.io/building-micro-frontend-applications-with-angular-elements-34483da08bcb
@@ -49,6 +52,13 @@ https://itnext.io/building-micro-frontend-applications-with-angular-elements-344
 #### Nachteile
 * Angular Kontext ist erforderlich
 * mehrere Frameworks laden, ist keine Option
+
+### Isolating micro-apps into IFrames
+using libraries and Window.postMessage APIs to coordinate. IFrames share APIs exposed by their parent window.
+
+### Meta Framework
+combine multiple frameworks on the same page 
+https://github.com/CanopyTax/single-spa
 
 ## Herausforderungen im Kontext von Micro Frontends
 
