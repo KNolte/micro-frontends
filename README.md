@@ -48,7 +48,7 @@ https://github.com/KNolte/micro-frontends/blob/master/index.html
 #### Nachteile
 * Sämtliche Funktionalität muss selbst geschrieben werden
 
-## Herausforderungen im Kontext von Micro Components
+## Herausforderungen im Kontext von Micro Frontends
 
 ### Navigation zwischen Seiten
 
