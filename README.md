@@ -16,7 +16,7 @@ Micro Frontends ist ein Ansatz die Idee der Micro Service Architektur als dem Ba
 * Team Prefixes nutzen
 * Native Browser Funktionen gegenüber Custom APIs bevorzugen
 
-## Die Problematik die aktuell (noch) existiert
+## Die Problematik die aktuell (noch) bei Plain Web Components existiert
 
 Wenn man auf unabhängige Web Components setzt, muss man aktuell noch sehr viel an Funktionalität programmieren, die man bei einem Framework wie Angular, React oder Vue.js geschenkt bekommen würde.
 
@@ -26,54 +26,54 @@ In den letzten Monaten kann man eine kleine Renaissance der Web Components sehen
 ## Das DOM ist die Schnittstelle
 Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über einheitliche Events (Shared Event Bus). Dabei ist jedes Event mit einem speziellen Prefix für das jeweilige Team versehen. Die Initialisierung jeder einzelnen Komponente erfolgt ausschließlich über das setzen von HTML Attributen.
 
-## Angular Elements als Ansatz
+## Unterschiedliche Ansätze
+
+### Angular Elements als Ansatz
 ![alt text](https://cdn-images-1.medium.com/max/2000/1*x-BikaKLnRBWop9T-6gJmA.png)
 https://itnext.io/building-micro-frontend-applications-with-angular-elements-34483da08bcb
 
-### Vorteile
+#### Vorteile
 * Mächtigkeit von Angular kann genutzt werden
 
-### Nachteile
+#### Nachteile
 * Angular Kontext ist erforderlich
 * mehrere Frameworks laden, ist keine Option
 
-## Plain Web Components Ansatz
+### Plain Web Components Ansatz
 https://github.com/KNolte/micro-frontends/blob/master/index.html
 
-### Vorteile
+#### Vorteile
 * keine Abhängigkeiten
 
-### Nachteile
-* Funktionalität muss selbst geschrieben werden
+#### Nachteile
+* Sämtliche Funktionalität muss selbst geschrieben werden
 
-## Vater-Kind und Geschwister Kommunikation / DOM Events
+## Herausforderungen im Kontext von Micro Components
 
-TODO
-
-## Navigation zwischen Seiten
+### Navigation zwischen Seiten
 
 TODO
 
-## Soft vs. Hard Navigation
+### Soft vs. Hard Navigation
 
 TODO
 
-## Universal Router
+### Universal Router
 
 TODO
 
-## Gemeinsame Ressourcen teilen
+### Gemeinsame Ressourcen teilen
 
 TODO
 
-## CSS Isolation / Konflikte vermeiden
+### CSS Isolation / Konflikte vermeiden
 
 TODO
 
-## Kohärentes User Interface
+### Kohärentes User Interface
 
 TODO
 
-## Style Guides & Pattern Libraries
+### Style Guides & Pattern Libraries
 
 TODO
