@@ -11,6 +11,8 @@ Micro Frontends ist ein Ansatz die Idee der Micro Service Architektur als dem Ba
 * Technologisch unabhängig bleiben
 * Kollisionen beim Buildprozess vermeiden
 * Code von den unterschiedlichen Teams isolieren
+* Team können sich selbst organisieren
+* Teams entwickeln, veröffentlichen und testen eigenständig
 * Team Prefixes nutzen
 * Native Browser Funktionen gegenüber Custom APIs bevorzugen
 
