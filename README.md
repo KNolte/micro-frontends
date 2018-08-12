@@ -30,8 +30,18 @@ Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über ei
 ![alt text](https://cdn-images-1.medium.com/max/2000/1*x-BikaKLnRBWop9T-6gJmA.png)
 https://itnext.io/building-micro-frontend-applications-with-angular-elements-34483da08bcb
 
-## Plain Web Components
+# Nachteile
+* Angular Kontext ist erforderlich
+* mehrere Frameworks laden, ist keine Option
+
+## Plain Web Components Ansatz
 https://github.com/KNolte/micro-frontends/blob/master/index.html
+
+# Vorteile
+* keine Abhängigkeiten
+
+# Nachteile
+* Funktionalität muss selbst geschrieben werden
 
 ## Vater-Kind und Geschwister Kommunikation / DOM Events
 
