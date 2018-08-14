@@ -63,8 +63,11 @@ https://github.com/CanopyTax/single-spa
 ### 6. Mosaic9 (Zalando)
 https://www.mosaic9.org/
 
-### 7. One Backend / Fragment (Matthias Laug)
-Die einzelnen Fragmente (Micro Frontends) kommunizieren, indem sie jeweils ihr "eigenes" Backend ansprechen, anstatt über das Frontend zu gehen.
+### 7. Backend pro Fragment (Matthias Laug)
+* Die einzelnen Fragmente werden zur Laufzeit geladen.
+* Die Komposition aller Fragmente ergibt dann einen Frame, welcher dann der eigentlichen Webseite entspricht.
+* Jedes Fragment hat sein eigenes Backend
+* Die einzelnen Fragmente (Micro Frontends) kommunizieren, indem sie jeweils ihr "eigenes" Backend ansprechen, anstatt über das Frontend zu gehen.
 
 https://www.youtube.com/watch?v=rCxj-ONZmxs
 
