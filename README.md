@@ -60,6 +60,9 @@ using libraries and Window.postMessage APIs to coordinate. IFrames share APIs ex
 combine multiple frameworks on the same page 
 https://github.com/CanopyTax/single-spa
 
+### 6. Mosaic9 (Zalando)
+https://www.mosaic9.org/
+
 ## Herausforderungen im Kontext von Micro Frontends
 
 ### Navigation zwischen Seiten
