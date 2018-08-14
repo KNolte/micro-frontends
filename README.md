@@ -23,13 +23,13 @@ Wenn man auf unabhängige Web Components setzt, muss man aktuell noch sehr viel 
 ## Web Components Renaissance
 In den letzten Monaten kann man eine kleine Renaissance der Web Components sehen. Unternehmen wie Google (Angular Elements und Polymer 2) und Ionic Framework (Stencil) bauen Tools auf, die Web Components zugänglicher und performanter machen. Es gibt auch neue Gemeinschaftsunternehmen wie SkateJS und SlimJS, die die Entwicklung von Web-Komponenten erleichtern. Alle neuen Tools enthalten Framework-Goodies wie Datenbindung und mehr, die die Lücke der Nutzung von Webkomponenten schließen. Darüber hinaus verwendet die Community diese Tools, um wiederverwendbare Webkomponenten zu erstellen, die in jedem Framework verwendet werden können.
 
-## Das DOM ist die Schnittstelle
-Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über einheitliche Events (Shared Event Bus). Dabei ist jedes Event mit einem speziellen Prefix für das jeweilige Team versehen. Die Initialisierung jeder einzelnen Komponente erfolgt ausschließlich über das setzen von HTML Attributen.
-
 ## Unterschiedliche Ansätze
 
 ### 1. Plain Web Components Ansatz
 https://github.com/KNolte/micro-frontends/blob/master/index.html
+
+#### Das DOM ist die Schnittstelle
+Die Kommunikation zwischen den einzelnen Web Components (Teams) erfolgt über einheitliche Events (Shared Event Bus). Dabei ist jedes Event mit einem speziellen Prefix für das jeweilige Team versehen. Die Initialisierung jeder einzelnen Komponente erfolgt ausschließlich über das setzen von HTML Attributen.
 
 #### Vorteile
 * keine Abhängigkeiten
@@ -62,6 +62,11 @@ https://github.com/CanopyTax/single-spa
 
 ### 6. Mosaic9 (Zalando)
 https://www.mosaic9.org/
+
+### 7. One Backend / Fragment (Matthias Laug)
+Die einzelnen Fragmente (Micro Frontends) kommunizieren, indem sie jeweils ihr "eigenes" Backend ansprechen, anstatt über das Frontend zu gehen.
+
+https://www.youtube.com/watch?v=rCxj-ONZmxs
 
 ## Herausforderungen im Kontext von Micro Frontends
 
