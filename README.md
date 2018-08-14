@@ -70,30 +70,10 @@ https://www.youtube.com/watch?v=rCxj-ONZmxs
 
 ## Herausforderungen im Kontext von Micro Frontends
 
-### Navigation zwischen Seiten
-
-TODO
-
-### Soft vs. Hard Navigation
-
-TODO
-
-### Universal Router
-
-TODO
-
-### Gemeinsame Ressourcen teilen
-
-TODO
-
-### CSS Isolation / Konflikte vermeiden
-
-TODO
-
-### Kohärentes User Interface
-
-TODO
-
-### Style Guides & Pattern Libraries
-
-TODO
+* Navigation zwischen Seiten
+* Soft vs. Hard Navigation
+* Universal Router
+* Gemeinsame Ressourcen teilen
+* CSS Isolation / Konflikte vermeiden
+* Einheitliche UX
+* Style Guides & Pattern Libraries
